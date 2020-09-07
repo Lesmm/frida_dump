@@ -44,11 +44,12 @@ Spawned `packagename`. Resuming main thread!
 _ZN3art11ClassLinker11DefineClassEPNS_6ThreadEPKcmNS_6HandleINS_6mirror11ClassLoaderEEERKNS_7DexFileERKNS9_8ClassDefE 0x7ac6dc4f74
 [DefineClass:] 0x7ac6dc4f74
 [dump dex]: /data/data/packagename/files/7aab800000_8341c4.dex
+## zip dumped.zip *.dex
 ```
 
-## 3. 打包成APK后用jadx-gui打开
+## 3. 打包成APK后用jadx-gui打开，注意 index 从 2 开始
 
-重命名成 classes.dex classes1.dex classes[2-n].dex ...
+重命名成 classes.dex classes2.dex classes[3-n].dex ...
 
 ```Text
 zip [file_name].apk *.dex

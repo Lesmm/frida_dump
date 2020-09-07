@@ -29,7 +29,7 @@ function dump_dex() {
     for (var index = 0; index < symbols.length; index++) {
         var symbol = symbols[index];
         var symbol_name = symbol.name;
-        //这个DefineClass的函数签名是Android9的
+        //这个 DefineClass 的函数签名是 Android9 的
         //_ZN3art11ClassLinker11DefineClassEPNS_6ThreadEPKcmNS_6HandleINS_6mirror11ClassLoaderEEERKNS_7DexFileERKNS9_8ClassDefE
         if (symbol_name.indexOf("ClassLinker") >= 0 && 
             symbol_name.indexOf("DefineClass") >= 0 && 
@@ -66,7 +66,6 @@ function dump_dex() {
                                 fd.flush();
                                 fd.close();
                                 console.log("[dump dex]:", dex_path);
-
                             }
                         }
                     }
